@@ -58,7 +58,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/LeftViewController.swift"
-                  timestampString = "494480235.724404"
+                  timestampString = "494769992.696544"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -73,7 +73,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/LeftViewController.swift"
-                  timestampString = "494480235.724735"
+                  timestampString = "494769992.696907"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -202,7 +202,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.732519"
+                  timestampString = "494769992.70558"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "334"
@@ -217,7 +217,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.732739"
+                  timestampString = "494769992.705806"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "334"
@@ -232,7 +232,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.732889"
+                  timestampString = "494769992.706022"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "334"
@@ -247,7 +247,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.733034"
+                  timestampString = "494769992.706233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "334"
@@ -292,15 +292,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "gotago/controller/SetupProfileController.swift"
-            timestampString = "494263466.549288"
+            filePath = "gotago/DashBoardViewController.swift"
+            timestampString = "494769991.533068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -312,27 +312,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gotago/DashBoardViewController.swift"
-            timestampString = "494480523.872382"
+            timestampString = "494769991.533068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gotago/DashBoardViewController.swift"
-            timestampString = "494480523.872382"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -421,44 +405,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "gotago/controller/SetupProfileController.swift"
-            timestampString = "494263466.549288"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "doNothing()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gotago/controller/SetupProfileController.swift"
-            timestampString = "494263466.549288"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "didReceiveMemoryWarning()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "gotago/DashBoardViewController.swift"
-            timestampString = "494480523.872382"
+            timestampString = "494769991.533068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "leftWillOpen()"
             landmarkType = "5">
          </BreakpointContent>
@@ -486,7 +438,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/DashBoardViewController.swift"
-                  timestampString = "494480235.739176"
+                  timestampString = "494769992.713743"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -501,7 +453,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/DashBoardViewController.swift"
-                  timestampString = "494480235.739421"
+                  timestampString = "494769992.713982"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -516,7 +468,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/DashBoardViewController.swift"
-                  timestampString = "494480235.739611"
+                  timestampString = "494769992.714226"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -531,7 +483,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/DashBoardViewController.swift"
-                  timestampString = "494480235.739751"
+                  timestampString = "494769992.714446"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -548,11 +500,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gotago/DashBoardViewController.swift"
-            timestampString = "494480523.872382"
+            timestampString = "494769991.533068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "viewDidLayoutSubviews()"
             landmarkType = "5">
          </BreakpointContent>
@@ -580,7 +532,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.742195"
+                  timestampString = "494769992.716994"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -595,7 +547,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.742337"
+                  timestampString = "494769992.717144"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -610,7 +562,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.742468"
+                  timestampString = "494769992.717278"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -625,7 +577,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.742591"
+                  timestampString = "494769992.717405"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -658,7 +610,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.744362"
+                  timestampString = "494769992.718801"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -673,7 +625,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.744608"
+                  timestampString = "494769992.718946"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -688,7 +640,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.744827"
+                  timestampString = "494769992.719073"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -703,7 +655,7 @@
                   moduleName = "gotago"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Choco/Official/iOS/Projects/GotaGo/GotaGo/trunk/gotago/SlideMenuController.swift"
-                  timestampString = "494480235.745015"
+                  timestampString = "494769992.719199"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -758,22 +710,6 @@
             startingLineNumber = "14"
             endingLineNumber = "14"
             landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gotago/controller/SetupProfileController.swift"
-            timestampString = "494478642.067797"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "deinit"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

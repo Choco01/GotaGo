@@ -390,7 +390,7 @@
                                 </constraints>
                                 <state key="normal" image="Continue.png"/>
                                 <connections>
-                                    <segue destination="Z5d-2h-cEH" kind="show" id="d5m-TW-FaR"/>
+                                    <action selector="continueButtonTapped:" destination="ftl-zj-3SE" eventType="touchUpInside" id="Reo-Er-nZV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -413,6 +413,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="continueButton" destination="4Ng-rm-0HY" id="dID-Sb-5IU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOO-zl-GKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1094,20 +1097,6 @@ do eiusmod tempor incididunt.</string>
                 </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="321" y="787"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="I2v-Be-hbP">
-            <objects>
-                <navigationController modalPresentationStyle="currentContext" navigationBarHidden="YES" id="N6y-3h-icT" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShI-l3-HGB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AFV-mX-LpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-26" y="1610"/>
         </scene>
     </scenes>
     <resources>
