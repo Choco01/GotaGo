@@ -11,12 +11,6 @@ import UIKit
 class SetupProfileController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     
-    //    let name:String;
-    
-    //
-    //    required init?(coder aDecoder: NSCoder) {
-    ////        fatalError("init(coder:) has not been implemented")
-    //    }
     private func createMenuView() {
         
         // create viewController code...
@@ -27,9 +21,6 @@ class SetupProfileController: UIViewController {
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
-        //        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        //        appDelegate.window?.rootViewController = nvc
-        
         UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
         
         leftViewController.mainViewController = nvc
@@ -38,11 +29,6 @@ class SetupProfileController: UIViewController {
         slideMenuController.automaticallyAdjustsScrollViewInsets = true
         slideMenuController.delegate = mainViewController
         self.navigationController?.pushViewController(slideMenuController, animated: false)
-        
-        
-        //        appDelegate.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
-        //        appDelegate.window?.rootViewController = slideMenuController
-        //        appDelegate.window?.makeKeyAndVisible()
     }
     
     deinit{
@@ -55,6 +41,7 @@ class SetupProfileController: UIViewController {
         super.viewWillAppear(animated)
         self.setNavigationBarItem()
         self.navigationController?.navigationBarHidden = true
+        
         //
     }
     

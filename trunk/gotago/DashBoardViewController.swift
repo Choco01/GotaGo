@@ -12,7 +12,7 @@ protocol MenuActionDelegate {
     func openSegue(SegueName: String, sender: AnyObject?)
 }
 
-class DashBoardViewController: UIViewController, UICollectionViewDelegate {
+class DashBoardViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var nearMeCollectionView: UICollectionView!
@@ -121,6 +121,31 @@ extension DashBoardViewController: UICollectionViewDataSource {
             
             return cell
         }
+    }
+}
+
+// MARK:- UICollectionViewDelegate Methods
+
+extension DashBoardViewController : UICollectionViewDelegate {
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        highlightCell(indexPath, flag: true)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+//        highlightCell(indexPath, flag: false)
+    }
+}
+
+extension DashBoardViewController: UICollectionViewDelegateFlowLayout {
+    // MARK:- UICollectioViewDelegateFlowLayout methods
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    {
+        // http://stackoverflow.com/questions/28872001/uicollectionview-cell-spacing-based-on-device-sceen-size
+        
+        let length = (UIScreen.mainScreen().bounds.width-15)/2
+        return CGSizeMake(length,length);
     }
 }
 

@@ -58,7 +58,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="xCr-t6-Bh1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="xCr-t6-Bh1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -78,7 +78,7 @@
                                     <constraint firstAttribute="width" secondItem="sHT-qG-zY0" secondAttribute="height" multiplier="1:1" id="Ro9-Q2-12p"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyrigth (c) Reserved with Sauce Code Technologies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-df-ePv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Copyrigth (c) Reserved with Sauce Code Technologies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-df-ePv">
                                 <rect key="frame" x="41" y="690" width="331" height="18"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -135,10 +135,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-E5-eLX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-E5-eLX">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobilebgpanel.png" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-m7-X0k" userLabel="panel">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mobilebgpanel.png" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-m7-X0k" userLabel="panel">
                                 <rect key="frame" x="20" y="110" width="374" height="178"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -147,19 +147,19 @@
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-x7-2Cy" userLabel="countryCode">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-x7-2Cy" userLabel="countryCode">
                                 <rect key="frame" x="46" y="171" width="28" height="22"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                 <color key="textColor" red="0.46274509803921571" green="0.72156862745098038" blue="0.25882352941176473" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A One Time Password (OTP) will be sent via SMS to verify your number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="SgH-wM-uAZ" userLabel="otpLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A One Time Password (OTP) will be sent via SMS to verify your number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="SgH-wM-uAZ" userLabel="otpLabel">
                                 <rect key="frame" x="46" y="204" width="321" height="30"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.002856104774877312" blue="0.57806490384615383" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="NvK-2N-GHq" userLabel="seperator">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="NvK-2N-GHq" userLabel="seperator">
                                 <rect key="frame" x="41" y="198" width="331" height="1"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90o-qD-TrM" userLabel="continue">
@@ -216,43 +216,43 @@
                         <viewControllerLayoutGuide type="top" id="KlP-oC-VMS"/>
                         <viewControllerLayoutGuide type="bottom" id="nRp-An-w2d"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mdJ-ja-aEY">
+                    <view key="view" contentMode="scaleToFill" id="mdJ-ja-aEY" userLabel="Eu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="36a-aJ-Yt7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="36a-aJ-Yt7">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIQ-39-one" userLabel="panelview">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIQ-39-one" userLabel="panelview">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signuppanel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Agg-Xp-WXr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="signuppanel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Agg-Xp-WXr">
                                         <rect key="frame" x="20" y="51" width="374" height="464"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP sent via SMS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="B5n-jl-29c" userLabel="OTPviaSMS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter OTP sent via SMS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="B5n-jl-29c" userLabel="OTPviaSMS">
                                         <rect key="frame" x="38" y="353" width="137" height="17"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0028561047749999999" blue="0.57806490379999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="QzH-0W-F0Y" userLabel="userimage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="QzH-0W-F0Y" userLabel="userimage">
                                         <rect key="frame" x="41" y="85" width="114" height="113"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="alr-OV-CYh" userLabel="seperator-email">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="alr-OV-CYh" userLabel="seperator-email">
                                         <rect key="frame" x="38" y="267" width="338" height="1"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="voo-PH-tWX" userLabel="email">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="voo-PH-tWX" userLabel="email">
                                         <rect key="frame" x="40" y="243" width="334" height="22"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="TUd-i5-z6s" userLabel="name">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="TUd-i5-z6s" userLabel="name">
                                         <rect key="frame" x="40" y="208" width="334" height="22"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-3K-jDb" userLabel="seperator-name">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-3K-jDb" userLabel="seperator-name">
                                         <rect key="frame" x="38" y="232" width="338" height="1"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AI4-oH-NkI" userLabel="twitter">
@@ -279,13 +279,13 @@
                                         </constraints>
                                         <state key="normal" image="Facebook.png"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Profile Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="kq4-0R-4s6" userLabel="profileinfo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Get Profile Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="kq4-0R-4s6" userLabel="profileinfo">
                                         <rect key="frame" x="250" y="85" width="81" height="17"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0028561047749999999" blue="0.57806490379999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dIb-Tp-Lay" userLabel="countryCode">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dIb-Tp-Lay" userLabel="countryCode">
                                         <rect key="frame" x="40" y="375" width="28" height="22"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <color key="textColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -296,18 +296,18 @@
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="UuR-BR-Ahm" userLabel="seperator-otp">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="UuR-BR-Ahm" userLabel="seperator-otp">
                                         <rect key="frame" x="38" y="452" width="338" height="1"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter One Time Password" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OhW-ev-8qw" userLabel="otp">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter One Time Password" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OhW-ev-8qw" userLabel="otp">
                                         <rect key="frame" x="40" y="429" width="334" height="22"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="ruY-mk-IxE" userLabel="seperator-mobile">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" image="seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="ruY-mk-IxE" userLabel="seperator-mobile">
                                         <rect key="frame" x="38" y="399" width="338" height="1"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fwo-ed-nxe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fwo-ed-nxe">
                                         <rect key="frame" x="38" y="405" width="32" height="22"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
                                         <color key="textColor" red="0.46274509800000002" green="0.72156862749999995" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -378,12 +378,12 @@
                                     <constraint firstItem="ruY-mk-IxE" firstAttribute="width" secondItem="GTq-3K-jDb" secondAttribute="width" id="yoy-aO-KBe"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By registering, you are agreeing to our Terms of Services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="a41-D8-tRK" userLabel="TC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="By registering, you are agreeing to our Terms of Services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="a41-D8-tRK" userLabel="TC">
                                 <rect key="frame" x="104" y="520" width="207" height="33"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ng-rm-0HY" userLabel="signup">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ng-rm-0HY" userLabel="signup">
                                 <rect key="frame" x="124" y="563" width="166" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Ng-rm-0HY" secondAttribute="height" multiplier="15:3" id="Wiw-Ac-DgY"/>
@@ -441,13 +441,13 @@ do eiusmod tempor incididunt.</string>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-2d-YlM" userLabel="image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-2d-YlM" userLabel="image">
                                 <rect key="frame" x="41" y="110" width="332" height="332"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UdI-2d-YlM" secondAttribute="height" multiplier="1:1" id="wpL-lp-gQ5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SEARCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-uB-NDO" userLabel="heading">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-uB-NDO" userLabel="heading">
                                 <rect key="frame" x="103" y="73" width="207" height="27"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" red="0.066666666666666666" green="0.42352941176470588" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -501,25 +501,25 @@ do eiusmod tempor incididunt.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-zd-FPJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-zd-FPJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-lM-czp">
+                            <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-lM-czp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="P9e-PX-6PY" kind="embed" id="KqP-2e-mm8"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-Mi-sT3">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-Mi-sT3">
                                 <rect key="frame" x="0.0" y="552" width="414" height="184"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-pC-ILR" userLabel="noAccount">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Don't have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-pC-ILR" userLabel="noAccount">
                                         <rect key="frame" x="47" y="22" width="142" height="17"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk9-kd-ygO" userLabel="orLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk9-kd-ygO" userLabel="orLabel">
                                         <rect key="frame" x="199" y="66" width="15" height="14"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Extrabold" family="Open Sans" pointSize="10"/>
                                         <nil key="highlightedColor"/>
@@ -529,7 +529,7 @@ do eiusmod tempor incididunt.</string>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlA-nb-hwQ" userLabel="signUp">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlA-nb-hwQ" userLabel="signUp">
                                         <rect key="frame" x="133" y="34" width="56" height="33"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Sign Up">
@@ -539,7 +539,7 @@ do eiusmod tempor incididunt.</string>
                                             <segue destination="ko6-Zc-wcd" kind="show" id="kHe-9W-Ado"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0w-Cs-CoB" userLabel="signIn">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0w-Cs-CoB" userLabel="signIn">
                                         <rect key="frame" x="224" y="34" width="50" height="33"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Sign In">
@@ -549,18 +549,18 @@ do eiusmod tempor incididunt.</string>
                                             <segue destination="ko6-Zc-wcd" kind="show" id="V0c-JI-3Ej"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough-seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="qDt-IU-7Oe" userLabel="leftSeperator">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="walkthrough-seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="qDt-IU-7Oe" userLabel="leftSeperator">
                                         <rect key="frame" x="58" y="72" width="131" height="2"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="dtk-ls-aKq"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough-seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1N-r2-Voe" userLabel="rightSeperator">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="walkthrough-seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1N-r2-Voe" userLabel="rightSeperator">
                                         <rect key="frame" x="224" y="72" width="131" height="2"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UB-iE-UkT" userLabel="twitter">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UB-iE-UkT" userLabel="twitter">
                                         <rect key="frame" x="187" y="104" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="FS5-dW-jZP"/>
@@ -568,7 +568,7 @@ do eiusmod tempor incididunt.</string>
                                         </constraints>
                                         <state key="normal" image="Twitter.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pii-Fp-UlV" userLabel="google">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pii-Fp-UlV" userLabel="google">
                                         <rect key="frame" x="237" y="104" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Da9-b0-mi5"/>
@@ -576,12 +576,12 @@ do eiusmod tempor incididunt.</string>
                                         </constraints>
                                         <state key="normal" image="Google.png"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwQ-xb-6Hh" userLabel="loginWith">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwQ-xb-6Hh" userLabel="loginWith">
                                         <rect key="frame" x="181" y="85" width="52" height="14"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="10"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7E-Ex-vQ1" userLabel="facebook">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7E-Ex-vQ1" userLabel="facebook">
                                         <rect key="frame" x="137" y="104" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="eIW-Ux-oVw"/>
@@ -665,7 +665,7 @@ do eiusmod tempor incididunt.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-1k-fPr" userLabel="description">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-1k-fPr" userLabel="description">
                                 <rect key="frame" x="41" y="461" width="331" height="58"/>
                                 <string key="text">Lorem ipsum dolor sit amet, 
 consectetur adipisicing elit, sed 
@@ -673,13 +673,13 @@ do eiusmod tempor incididunt.</string>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="O83-l4-lhK" userLabel="image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="O83-l4-lhK" userLabel="image">
                                 <rect key="frame" x="41" y="110" width="331" height="331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="O83-l4-lhK" secondAttribute="height" multiplier="1:1" id="KQj-hT-Nuz"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SELECT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="v2x-FI-pRM" userLabel="heading">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="v2x-FI-pRM" userLabel="heading">
                                 <rect key="frame" x="103" y="73" width="207" height="27"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" red="0.054901960784313725" green="0.35686274509803922" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -716,7 +716,7 @@ do eiusmod tempor incididunt.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="add-Aj-OyJ" userLabel="description">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="add-Aj-OyJ" userLabel="description">
                                 <rect key="frame" x="41" y="461" width="331" height="58"/>
                                 <string key="text">Lorem ipsum dolor sit amet, 
 consectetur adipisicing elit, sed 
@@ -724,13 +724,13 @@ do eiusmod tempor incididunt.</string>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7av-2M-z90" userLabel="image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7av-2M-z90" userLabel="image">
                                 <rect key="frame" x="41" y="110" width="331" height="331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7av-2M-z90" secondAttribute="height" multiplier="1:1" id="yNN-h0-jlK"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-mQ-ISY" userLabel="heading">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-mQ-ISY" userLabel="heading">
                                 <rect key="frame" x="103" y="73" width="207" height="27"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" red="0.054901960784313725" green="0.35686274509803922" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -877,9 +877,6 @@ do eiusmod tempor incididunt.</string>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mLG-aM-bXS">
                                                 <rect key="frame" x="1" y="313" width="318" height="270"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="318" id="3dv-Oq-Euo"/>
-                                                </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Gp6-CT-emC">
                                                     <size key="itemSize" width="150" height="130"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -901,10 +898,10 @@ do eiusmod tempor incididunt.</string>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         </view>
                                                         <constraints>
-                                                            <constraint firstItem="mq2-WS-9mZ" firstAttribute="top" secondItem="3ae-Tq-2SC" secondAttribute="top" id="0Pv-ms-TB4"/>
-                                                            <constraint firstAttribute="bottom" secondItem="mq2-WS-9mZ" secondAttribute="bottom" id="LFc-Xn-hlX"/>
-                                                            <constraint firstItem="mq2-WS-9mZ" firstAttribute="leading" secondItem="3ae-Tq-2SC" secondAttribute="leading" id="eft-OI-iaz"/>
-                                                            <constraint firstAttribute="trailing" secondItem="mq2-WS-9mZ" secondAttribute="trailing" id="o3N-Ol-dHJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mq2-WS-9mZ" secondAttribute="trailing" id="76P-UB-1yi"/>
+                                                            <constraint firstItem="mq2-WS-9mZ" firstAttribute="top" secondItem="3ae-Tq-2SC" secondAttribute="top" id="Mre-c6-eUk"/>
+                                                            <constraint firstItem="mq2-WS-9mZ" firstAttribute="leading" secondItem="3ae-Tq-2SC" secondAttribute="leading" id="utI-4G-rAT"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mq2-WS-9mZ" secondAttribute="bottom" id="vZf-2o-iK6"/>
                                                         </constraints>
                                                     </collectionViewCell>
                                                 </cells>
@@ -996,25 +993,26 @@ do eiusmod tempor incididunt.</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="LaO-SL-qIK" firstAttribute="trailing" secondItem="mLG-aM-bXS" secondAttribute="trailing" id="2xi-Rx-73s"/>
                                             <constraint firstItem="LaO-SL-qIK" firstAttribute="top" secondItem="hlt-C9-duy" secondAttribute="bottom" constant="8" id="35z-Iy-HTR"/>
                                             <constraint firstItem="hlt-C9-duy" firstAttribute="top" secondItem="hNT-MS-uht" secondAttribute="bottom" constant="32" id="3CQ-DF-6Fk"/>
-                                            <constraint firstItem="hNT-MS-uht" firstAttribute="top" secondItem="mLG-aM-bXS" secondAttribute="bottom" constant="-2" id="9X3-xx-bOJ"/>
-                                            <constraint firstItem="hNT-MS-uht" firstAttribute="leading" secondItem="mLG-aM-bXS" secondAttribute="leading" id="9fD-LR-cey"/>
+                                            <constraint firstAttribute="bottom" secondItem="LaO-SL-qIK" secondAttribute="bottom" constant="35" id="51Q-zG-tE2"/>
                                             <constraint firstItem="LaO-SL-qIK" firstAttribute="leading" secondItem="EGp-w1-cZm" secondAttribute="leading" id="CPA-fb-8T1"/>
+                                            <constraint firstItem="mLG-aM-bXS" firstAttribute="top" secondItem="gsg-rp-mwC" secondAttribute="bottom" constant="4" id="EPN-NY-7hC"/>
                                             <constraint firstItem="WG9-zB-KVP" firstAttribute="centerX" secondItem="EGp-w1-cZm" secondAttribute="centerX" id="Epk-HD-AhL"/>
+                                            <constraint firstItem="T9G-Lh-aDd" firstAttribute="top" secondItem="mLG-aM-bXS" secondAttribute="bottom" constant="38" id="FYO-Nw-IVx"/>
+                                            <constraint firstItem="LaO-SL-qIK" firstAttribute="trailing" secondItem="mLG-aM-bXS" secondAttribute="trailing" id="HI5-WF-9sO"/>
+                                            <constraint firstItem="LaO-SL-qIK" firstAttribute="trailing" secondItem="EGp-w1-cZm" secondAttribute="trailing" id="LFL-Jz-ly8"/>
                                             <constraint firstItem="0ut-Rz-8KS" firstAttribute="top" secondItem="Fid-vL-lJJ" secondAttribute="top" constant="51" id="LlI-Ed-LfX"/>
                                             <constraint firstItem="WG9-zB-KVP" firstAttribute="leading" secondItem="EGp-w1-cZm" secondAttribute="leading" id="MRs-58-XZF"/>
                                             <constraint firstItem="0ut-Rz-8KS" firstAttribute="leading" secondItem="Fid-vL-lJJ" secondAttribute="leading" constant="18" id="ULC-vy-DT5"/>
-                                            <constraint firstAttribute="bottom" secondItem="mLG-aM-bXS" secondAttribute="bottom" constant="417" id="XNq-MV-6qh"/>
                                             <constraint firstItem="hNT-MS-uht" firstAttribute="trailing" secondItem="WG9-zB-KVP" secondAttribute="trailing" id="Znr-nm-JaU"/>
-                                            <constraint firstItem="mLG-aM-bXS" firstAttribute="top" secondItem="EGp-w1-cZm" secondAttribute="bottom" constant="36" id="au0-bW-yNx"/>
+                                            <constraint firstItem="hNT-MS-uht" firstAttribute="leading" secondItem="mLG-aM-bXS" secondAttribute="leading" id="dYL-nQ-jDk"/>
                                             <constraint firstItem="gsg-rp-mwC" firstAttribute="top" secondItem="EGp-w1-cZm" secondAttribute="bottom" constant="8" symbolic="YES" id="db1-OZ-XqR"/>
                                             <constraint firstItem="EGp-w1-cZm" firstAttribute="top" secondItem="WG9-zB-KVP" secondAttribute="bottom" constant="8" id="g8c-Ce-SPA"/>
                                             <constraint firstItem="WG9-zB-KVP" firstAttribute="top" secondItem="Fid-vL-lJJ" secondAttribute="top" constant="65" id="goX-Ky-PRb"/>
+                                            <constraint firstItem="hNT-MS-uht" firstAttribute="centerX" secondItem="hlt-C9-duy" secondAttribute="centerX" id="i93-bm-x3O"/>
                                             <constraint firstItem="T9G-Lh-aDd" firstAttribute="leading" secondItem="gsg-rp-mwC" secondAttribute="leading" id="iYq-6v-vbY"/>
                                             <constraint firstItem="hlt-C9-duy" firstAttribute="top" secondItem="T9G-Lh-aDd" secondAttribute="bottom" constant="5" id="o3d-M0-RLS"/>
-                                            <constraint firstItem="mLG-aM-bXS" firstAttribute="leading" secondItem="Fid-vL-lJJ" secondAttribute="leading" constant="1" id="oJb-Mu-c7O"/>
                                             <constraint firstItem="gsg-rp-mwC" firstAttribute="leading" secondItem="0ut-Rz-8KS" secondAttribute="leading" id="sGm-Y3-I70"/>
                                             <constraint firstAttribute="trailing" secondItem="WG9-zB-KVP" secondAttribute="trailing" id="sjN-t1-Fvt"/>
                                             <constraint firstItem="WG9-zB-KVP" firstAttribute="leading" secondItem="Fid-vL-lJJ" secondAttribute="leading" id="tNH-Sj-RDc"/>
@@ -1097,6 +1095,66 @@ do eiusmod tempor incididunt.</string>
                 </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="321" y="787"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="JRf-hk-Ovh">
+            <objects>
+                <viewController id="5Yc-CX-dZi" customClass="DetailViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HlJ-ar-Q8j"/>
+                        <viewControllerLayoutGuide type="bottom" id="IFe-11-5P0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kZf-mw-XRc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmP-eY-Wyx">
+                                <rect key="frame" x="13" y="167" width="294" height="294"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sG3-3v-iou">
+                                        <rect key="frame" x="20" y="20" width="254" height="254"/>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="780"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="33" y="187" width="400" height="780"/>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MmP-eY-Wyx" firstAttribute="leading" secondItem="kZf-mw-XRc" secondAttribute="leading" id="HWA-br-aL9"/>
+                            <constraint firstItem="IFe-11-5P0" firstAttribute="top" secondItem="MmP-eY-Wyx" secondAttribute="bottom" id="JVW-Bk-ziQ"/>
+                            <constraint firstItem="MmP-eY-Wyx" firstAttribute="top" secondItem="HlJ-ar-Q8j" secondAttribute="bottom" id="Xav-FD-wkT"/>
+                            <constraint firstAttribute="trailing" secondItem="MmP-eY-Wyx" secondAttribute="trailing" id="koY-MD-82H"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HWA-br-aL9"/>
+                                <exclude reference="Xav-FD-wkT"/>
+                                <exclude reference="koY-MD-82H"/>
+                                <exclude reference="JVW-Bk-ziQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="HWA-br-aL9"/>
+                                <include reference="Xav-FD-wkT"/>
+                                <include reference="koY-MD-82H"/>
+                                <include reference="JVW-Bk-ziQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="LYL-8q-ccv"/>
+                    <connections>
+                        <outlet property="imageView" destination="sG3-3v-iou" id="BNB-fh-Nlb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E80-st-3Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="308.25"/>
         </scene>
     </scenes>
     <resources>

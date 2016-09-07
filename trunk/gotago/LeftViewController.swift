@@ -1,8 +1,9 @@
 //
-//  LeftViewController.swift
-//  SlideMenuControllerSwift
+//  DashBoardViewController.swift
+//  Carousel
 //
-//  Created by Yuji Hato on 12/3/14.
+//  Created by Saurabh Chakraborty on 20/07/16.
+//  Copyright © 2016 Intelegencia. All rights reserved.
 //
 
 import UIKit

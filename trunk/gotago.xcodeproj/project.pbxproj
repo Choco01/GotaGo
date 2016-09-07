@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		200B03D8158A32462E5B402F /* Pods_gotago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C43557B156FA3D2BE9C36BC /* Pods_gotago.framework */; };
+		3B0D55B41D8019AE00244E57 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D55B31D8019AE00244E57 /* DetailViewController.swift */; };
+		3B0D55B61D8019DB00244E57 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D55B51D8019DB00244E57 /* FruitCell.swift */; };
+		3B0D55B81D8019F400244E57 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D55B71D8019F400244E57 /* Fruit.swift */; };
 		3B90BB981D7564CB00DF6201 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90BB971D7564CB00DF6201 /* DashBoardViewController.swift */; };
 		3B90BBAC1D75724D00DF6201 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90BBA31D75724D00DF6201 /* InterestCollectionViewCell.swift */; };
 		3B90BBAD1D75724D00DF6201 /* LocationsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90BBA41D75724D00DF6201 /* LocationsCollectionViewCell.swift */; };
@@ -153,6 +156,9 @@
 /* Begin PBXFileReference section */
 		30D7D794544ADC8A5EC57463 /* Pods-gotagoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gotagoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gotagoUITests/Pods-gotagoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		39A4555F595559CA6F907E71 /* Pods-gotagoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gotagoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gotagoUITests/Pods-gotagoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0D55B31D8019AE00244E57 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3B0D55B51D8019DB00244E57 /* FruitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		3B0D55B71D8019F400244E57 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		3B90BB971D7564CB00DF6201 /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		3B90BBA31D75724D00DF6201 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B90BBA41D75724D00DF6201 /* LocationsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -298,6 +304,7 @@
 		3B90BBA21D75724D00DF6201 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3B0D55B51D8019DB00244E57 /* FruitCell.swift */,
 				3B90BBD01D7582F400DF6201 /* BaseTableViewCell.swift */,
 				3B90BBCC1D75824700DF6201 /* ImageHeaderView.swift */,
 				3B90BBCD1D75824700DF6201 /* ImageHeaderView.xib */,
@@ -472,6 +479,7 @@
 		46AE5FC71CFC9D1A00560784 /* gotago */ = {
 			isa = PBXGroup;
 			children = (
+				3B0D55B71D8019F400244E57 /* Fruit.swift */,
 				3B90BBA11D75724D00DF6201 /* View */,
 				467E2D671D10721F00D81E58 /* gotago.playground */,
 				467E2D1F1D0AC2EA00D81E58 /* Common */,
@@ -509,6 +517,7 @@
 		46AE60031CFE03E400560784 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				3B0D55B31D8019AE00244E57 /* DetailViewController.swift */,
 				3B90BBCA1D7581DC00DF6201 /* LeftViewController.swift */,
 				3B90BB971D7564CB00DF6201 /* DashBoardViewController.swift */,
 				46AE60211D00A6CE00560784 /* walkthrough */,
@@ -924,6 +933,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0D55B41D8019AE00244E57 /* DetailViewController.swift in Sources */,
 				3B90BBC01D757EA900DF6201 /* UIApplication.swift in Sources */,
 				3B90BBAD1D75724D00DF6201 /* LocationsCollectionViewCell.swift in Sources */,
 				3B90BBAC1D75724D00DF6201 /* InterestCollectionViewCell.swift in Sources */,
@@ -931,6 +941,7 @@
 				3B90BBD11D7582F400DF6201 /* BaseTableViewCell.swift in Sources */,
 				467E2D271D0AEA8A00D81E58 /* OpenSansFont.swift in Sources */,
 				3B90BBC81D757EEC00DF6201 /* ExSlideMenuController.swift in Sources */,
+				3B0D55B61D8019DB00244E57 /* FruitCell.swift in Sources */,
 				3B90BBB11D75724D00DF6201 /* Locations.swift in Sources */,
 				46AE60121CFE040F00560784 /* SplashScreenController.swift in Sources */,
 				467E2D321D0AF8B800D81E58 /* BaseViewController.swift in Sources */,
@@ -947,6 +958,7 @@
 				46AE5FCB1CFC9D1A00560784 /* ViewController.swift in Sources */,
 				3B90BBBF1D757EA900DF6201 /* String.swift in Sources */,
 				3B90BBC41D757EA900DF6201 /* UITableViewExtension.swift in Sources */,
+				3B0D55B81D8019F400244E57 /* Fruit.swift in Sources */,
 				46AE5FC91CFC9D1A00560784 /* AppDelegate.swift in Sources */,
 				3B90BBCB1D7581DC00DF6201 /* LeftViewController.swift in Sources */,
 				3B90BBCE1D75824700DF6201 /* ImageHeaderView.swift in Sources */,
