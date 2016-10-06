@@ -11,13 +11,13 @@ import UIKit
 class SetupProfileController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     
-    private func createMenuView() {
+    fileprivate func createMenuView() {
         
         // create viewController code...
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("DashBoardViewController") as! DashBoardViewController
-        let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
+        let mainViewController = storyboard.instantiateViewController(withIdentifier: "DashBoardViewController") as! DashBoardViewController
+        let leftViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
@@ -37,10 +37,24 @@ class SetupProfileController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    
+    // MARK:- prepareForSegue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        
+        let dashboardViewController = segue.destination as! DashBoardViewController
+        self.navigationController?.pushViewController(dashboardViewController, animated: true)
+//        self.navigationController?.navigationBar.backItem?.backBarButtonItem
+        
+        self.createMenuView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)  
         self.setNavigationBarItem()
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.navigationBar.backItem?.backBarButtonItem
         
         //
     }
@@ -48,7 +62,7 @@ class SetupProfileController: UIViewController {
     func doNothing() {
         print("do nothing..!!")
     }
-    @IBAction func continueButtonTapped(sender:UIButton){
+    @IBAction func continueButtonTapped(_ sender:UIButton){
         self.createMenuView()
     }
     

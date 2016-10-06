@@ -17,8 +17,9 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.isNavigationBarHidden = false
         self.mobileNumber.becomeFirstResponder()
+        self.navigationController?.navigationBar.backItem?.backBarButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +27,9 @@ class SignupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = false
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.backItem?.backBarButtonItem
         self.mobileNumber.becomeFirstResponder()
     }
     

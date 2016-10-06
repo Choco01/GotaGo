@@ -1,26 +1,17 @@
 # Uncomment this line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, ‘9.0’
 use_frameworks!
 
 target 'gotago' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  pod 'Alamofire'
+  pod 'Alamofire', 
+	:git => 'https://github.com/Alamofire/Alamofire.git'
   pod 'Bolts'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'
 
   # Pods for gotago
-
-  target 'gotagoTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'gotagoUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

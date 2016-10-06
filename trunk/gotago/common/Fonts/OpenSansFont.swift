@@ -15,7 +15,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Regular with size
-    public static func regularWithSize(size: CGFloat) -> UIFont {
+    public static func regularWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans")
         if let f = UIFont(name: "OpenSans", size: size) {
             return f
@@ -29,7 +29,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Light with size
-    public static func lightWithSize(size: CGFloat) -> UIFont {
+    public static func lightWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-Light")
         if let f = UIFont(name: "OpenSans-Light", size: size) {
             return f
@@ -43,7 +43,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Italic with size
-    public static func italicWithSize(size: CGFloat) -> UIFont {
+    public static func italicWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-Italic")
         if let f = UIFont(name: "OpenSans-Italic", size: size) {
             return f
@@ -57,7 +57,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Bold with size
-    public static func boldWithSize(size: CGFloat) -> UIFont {
+    public static func boldWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-Bold")
         if let f = UIFont(name: "OpenSans-Bold", size: size) {
             return f
@@ -71,7 +71,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Semi Bold with size
-    public static func semiBoldWithSize(size: CGFloat) -> UIFont {
+    public static func semiBoldWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-Semibold")
         if let f = UIFont(name: "OpenSans-Semibold", size: size) {
             return f
@@ -85,7 +85,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Extra Bold with size
-    public static func extraBoldWithSize(size: CGFloat) -> UIFont {
+    public static func extraBoldWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-ExtraBold")
         if let f = UIFont(name: "OpenSans-ExtraBold", size: size) {
             return f
@@ -99,7 +99,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Light Italic with size
-    public static func lightItalicWithSize(size: CGFloat) -> UIFont {
+    public static func lightItalicWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-LightItalic")
         if let f = UIFont(name: "OpenSans-LightItalic", size: size) {
             return f
@@ -113,7 +113,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Bold Italic with size
-    public static func boldItalicWithSize(size: CGFloat) -> UIFont {
+    public static func boldItalicWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-BoldItalic")
         if let f = UIFont(name: "OpenSans-BoldItalic", size: size) {
             return f
@@ -127,7 +127,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Extra Bold Italic with size
-    public static func extraBoldItalicWithSize(size: CGFloat) -> UIFont {
+    public static func extraBoldItalicWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-ExtraBoldItalic")
         if let f = UIFont(name: "OpenSans-ExtraBoldItalic", size: size) {
             return f
@@ -141,7 +141,7 @@ public struct OpenSansFont: SauceCodeFontType {
     }
     
     // OpenSans Semi Bold Italic with size
-    public static func semiBoldItalicWithSize(size: CGFloat) -> UIFont {
+    public static func semiBoldItalicWithSize(_ size: CGFloat) -> UIFont {
         SauceCodeFont.loadFontIfNeeded("OpenSans-SemiboldItalic")
         if let f = UIFont(name: "OpenSans-SemiboldItalic", size: size) {
             return f

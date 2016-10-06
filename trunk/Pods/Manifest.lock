@@ -1,32 +1,41 @@
 PODS:
-  - Alamofire (3.4.1)
-  - Bolts (1.7.0):
-    - Bolts/AppLinks (= 1.7.0)
-    - Bolts/Tasks (= 1.7.0)
-  - Bolts/AppLinks (1.7.0):
+  - Alamofire (4.0.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
-  - Bolts/Tasks (1.7.0)
-  - FBSDKCoreKit (4.13.1):
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.15.1):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.13.1):
+  - FBSDKLoginKit (4.15.1):
     - FBSDKCoreKit
-  - FBSDKShareKit (4.13.1):
+  - FBSDKShareKit (4.15.1):
     - FBSDKCoreKit
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
   - Bolts
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
 
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: fc95610645577e3dd6b21196f0595a0b6bdb3698
+    :git: https://github.com/Alamofire/Alamofire.git
+
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
-  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
-  FBSDKCoreKit: 2807fe0da2ddb49a1469da6d6ff597f99912980f
-  FBSDKLoginKit: 6d350cb6a22d6956e9d078885de6ee8a0ebc51b4
-  FBSDKShareKit: c9438df7573b33780ac8c3451201c5ebb260ffca
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
+  FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
+  FBSDKShareKit: 11cbb5a4d7b5fda8143cc95b76188147e6725736
 
-PODFILE CHECKSUM: be5f0ce76ed9ee229b316534d885bf13f040ddeb
+PODFILE CHECKSUM: 05b7650fc36c9b8512bbdf5c06cd80bb52ec8c40
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2

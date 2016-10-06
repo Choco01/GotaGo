@@ -19,7 +19,7 @@ class LocationsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var featuredImageView: UIImageView!
     
-    private func updateUI() {
+    fileprivate func updateUI() {
         
         featuredImageView?.image! = location.featuredImage
     }

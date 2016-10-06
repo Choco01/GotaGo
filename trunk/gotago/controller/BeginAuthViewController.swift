@@ -23,11 +23,11 @@ class BeginAuthViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
     
-    @IBAction func btnFacebook_click(sender: UIButton) {
+    @IBAction func btnFacebook_click(_ sender: UIButton) {
 //        let fbLoginManager: FBSDKLoginManager = FBSDKLoginManager()
 //        fbLoginManager.logInWithReadPermissions(["public_profile", "email"], fromViewController: self) { (result: FBSDKLoginManagerLoginResult!, error: NSError!) in
 //            if result.isCancelled {

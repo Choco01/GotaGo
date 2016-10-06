@@ -11,8 +11,8 @@ import UIKit
 public enum DeviceType {
     case iPad
     case iPhone
-    case TV
-    case Unspecified
+    case tv
+    case unspecified
 }
 
 public struct SauceCodeDevice {
@@ -23,7 +23,7 @@ public struct SauceCodeDevice {
         
         let machineMirror: Mirror = Mirror(reflecting: systemInfo.machine)
         let identifier: String = machineMirror.children.reduce("") { (identifier, element) in
-            guard let value = element.value as? Int8 where value != 0 else {
+            guard let value = element.value as? Int8 , value != 0 else {
                 return identifier
             }
             return identifier + String(UnicodeScalar(UInt8(value)))
@@ -61,21 +61,21 @@ public struct SauceCodeDevice {
     
     /// Retrieves the current device type.
     public static var type: DeviceType {
-        switch UIDevice.currentDevice().userInterfaceIdiom {
-        case .Pad:
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad:
             return .iPad
-        case .Phone:
+        case .phone:
             return .iPhone
-        case .TV:
-            return .TV
+        case .tv:
+            return .tv
         default:
-            return .Unspecified
+            return .unspecified
         }
     }
     
     /// A Boolean indicating if the device is in Landscape mode.
     public static var isLandscape: Bool {
-        return UIApplication.sharedApplication().statusBarOrientation.isLandscape
+        return UIApplication.shared.statusBarOrientation.isLandscape
     }
     
     /// A Boolean indicating if the device is in Portrait mode.
@@ -85,32 +85,32 @@ public struct SauceCodeDevice {
     
     /// The current UIInterfaceOrientation value.
     public static var orientation: UIInterfaceOrientation {
-        return UIApplication.sharedApplication().statusBarOrientation
+        return UIApplication.shared.statusBarOrientation
     }
     
     /// Retrieves the device status bar style.
     public static var statusBarStyle: UIStatusBarStyle {
         get {
-            return UIApplication.sharedApplication().statusBarStyle
+            return UIApplication.shared.statusBarStyle
         }
         set(value) {
-            UIApplication.sharedApplication().statusBarStyle = value
+            UIApplication.shared.statusBarStyle = value
         }
     }
     
     /// Retrieves the device status bar hidden state.
     public static var statusBarHidden: Bool {
         get {
-            return UIApplication.sharedApplication().statusBarHidden
+            return UIApplication.shared.isStatusBarHidden
         }
         set(value) {
-            UIApplication.sharedApplication().statusBarHidden = value
+            UIApplication.shared.isStatusBarHidden = value
         }
     }
     
     /// Retrieves the device bounds.
     public static var bounds: CGRect {
-        return UIScreen.mainScreen().bounds
+        return UIScreen.main.bounds
     }
     
     /// Retrieves the device width.
@@ -125,7 +125,7 @@ public struct SauceCodeDevice {
     
     /// Retrieves the device scale.
     public static var scale: CGFloat {
-        return UIScreen.mainScreen().scale
+        return UIScreen.main.scale
     }
 }
 

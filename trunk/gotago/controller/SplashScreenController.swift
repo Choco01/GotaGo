@@ -15,13 +15,13 @@ class SplashScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        performSelector(#selector(SplashScreenController.showGetStarted), withObject: nil, afterDelay: 3)
+        perform(#selector(SplashScreenController.showGetStarted), with: nil, afterDelay: 3)
         
         copyrightLabel.font = OpenSansFont.regularWithSize(16)//OpenSansFont.regularWithSize(18)
     }
     
     func showGetStarted() {
-        performSegueWithIdentifier("showGetStarted", sender: self)
+        performSegue(withIdentifier: "showGetStarted", sender: self)
     }
     
     override func didReceiveMemoryWarning() {

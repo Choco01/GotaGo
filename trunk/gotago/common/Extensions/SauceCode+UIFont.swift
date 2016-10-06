@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIFont {
     
-    public func stringSize(string: String, constrainedToWidth width: Double) -> CGSize {
-        return string.boundingRectWithSize(CGSize(width: width, height: DBL_MAX), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: self], context: nil).size
+    public func stringSize(_ string: String, constrainedToWidth width: Double) -> CGSize {
+        return string.boundingRect(with: CGSize(width: width, height: DBL_MAX), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: self], context: nil).size
     }
 }

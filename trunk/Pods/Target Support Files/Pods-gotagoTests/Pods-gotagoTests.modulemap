@@ -1,6 +1,0 @@
-framework module Pods_gotagoTests {
-  umbrella header "Pods-gotagoTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

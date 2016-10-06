@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import MapKit
 
 protocol MenuActionDelegate {
-    func openSegue(SegueName: String, sender: AnyObject?)
+    func openSegue(_ SegueName: String, sender: AnyObject?)
+}
+
+protocol HandleMapSearch: class {
+    func dropPinZoomIn(_ placemark:MKPlacemark)
 }
 
 class DashBoardViewController: UIViewController {
 
-    @IBOutlet weak var backgroundImageView: UIImageView!
+    //@IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var nearMeCollectionView: UICollectionView!
     @IBOutlet weak var locationCollectionView: UICollectionView!
     
@@ -24,18 +29,30 @@ class DashBoardViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView : UIView!
     
-    private var interests = Interest.createInterests()
-    private var locations = Locations.createLocations()
+    var selectedPin: MKPlacemark?
+    var resultSearchController: UISearchController!
+    
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    fileprivate var interests = Interest.createInterests()
+    fileprivate var locations = Locations.createLocations()
     
     var window: UIWindow?
     
+    var viewShowingMapView = true
+    
     let searchController = UISearchController(searchResultsController: nil)
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    //let dataSource = DataSource()
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setNavigationBarItem()
     }
@@ -45,7 +62,7 @@ class DashBoardViewController: UIViewController {
         let scrollViewBounds = scrollView.bounds
         let contentViewBounds = contentView.bounds
         
-        var scrollViewInsets = UIEdgeInsetsZero
+        var scrollViewInsets = UIEdgeInsets.zero
         scrollViewInsets.top = scrollViewBounds.size.height;
         scrollViewInsets.top -= contentViewBounds.size.height;
         
@@ -60,11 +77,109 @@ class DashBoardViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.prepareUI()
+        self.title = "GotaGo"
+        
+        let rightButton: UIBarButtonItem = UIBarButtonItem(title: "Map", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.flipBetweenViews))
+        self.navigationItem.rightBarButtonItem = rightButton
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
+        resultSearchController.searchResultsUpdater = locationSearchTable
+        let searchBar = resultSearchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = resultSearchController?.searchBar
+        resultSearchController.hidesNavigationBarDuringPresentation = false
+        resultSearchController.dimsBackgroundDuringPresentation = true
+        definesPresentationContext = true
+        locationSearchTable.mapView = mapView
+        locationSearchTable.handleMapSearchDelegate = self
+        
+        
+        nearMeCollectionView.dataSource = self
+        nearMeCollectionView.delegate = self
+//        self.setNavigationBarItem()
+        //self.prepareUI()
 
     }
     
-    private struct Storyboard {
+    
+    
+    func flipBetweenViews() {
+        if viewShowingMapView {
+            //            [UIView .transitionFromView(self.map, toView: self.listView, duration: 0.6, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)]
+            [UIView .transition(from: self.mapView, to: self.contentView, duration: 0.6, options: UIViewAnimationOptions.showHideTransitionViews, completion: nil)]
+            viewShowingMapView = false
+            self.contentView.isHidden = false
+            
+        } else {
+            [UIView .transition(from: self.contentView, to: self.mapView, duration: 0.6, options: UIViewAnimationOptions.showHideTransitionViews, completion: nil)]
+            self.contentView.isHidden = true
+            viewShowingMapView = true
+        }
+    }
+    
+    func getDirections(){
+        guard let selectedPin = selectedPin else { return }
+        let mapItem = MKMapItem(placemark: selectedPin)
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        mapItem.openInMaps(launchOptions: launchOptions)
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if let indexPath = getIndexPathForSelectedCell() {
+            highlightCell(indexPath, flag: false)
+        }
+    }
+    
+    // MARK:- prepareForSegue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // retrieve selected cell
+        let detailViewController = segue.destination as! DetailViewController
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
+    // MARK:- Should Perform Segue
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return !isEditing
+    }
+    
+    // MARK:- Selected Cell IndexPath
+    
+    func getIndexPathForSelectedCell() -> IndexPath? {
+        
+        var indexPath:IndexPath?
+        
+        if nearMeCollectionView.indexPathsForSelectedItems!.count > 0 {
+            indexPath = nearMeCollectionView.indexPathsForSelectedItems![0]
+        }
+        return indexPath
+    }
+    
+    // MARK:- Highlight
+    
+    func highlightCell(_ indexPath : IndexPath, flag: Bool) {
+        
+        let cell = nearMeCollectionView.cellForItem(at: indexPath)
+        
+        if flag {
+            cell?.contentView.backgroundColor = UIColor.magenta
+        } else {
+            cell?.contentView.backgroundColor = nil
+        }
+    }
+    
+    fileprivate struct Storyboard {
         static let CellIdentifier = "Interest Cell"
         static let LocationIdentifier = "Location Cell"
     }
@@ -79,13 +194,13 @@ class DashBoardViewController: UIViewController {
 
             searchController.searchResultsUpdater = self
             searchController.searchBar.delegate = self
-            searchController.searchBar.searchBarStyle       = UISearchBarStyle.Minimal
-            searchController.searchBar.backgroundColor      = UIColor.whiteColor()
-            searchController.searchBar.tintColor            = UIColor.blackColor()
+            searchController.searchBar.searchBarStyle       = UISearchBarStyle.minimal
+            searchController.searchBar.backgroundColor      = UIColor.white
+            searchController.searchBar.tintColor            = UIColor.black
             searchController.searchBar.delegate             = self;
             searchController.searchBar.placeholder          = "Search";
         
-        if !searchController.searchBar.isDescendantOfView(self.view){
+        if !searchController.searchBar.isDescendant(of: self.view){
             self.view .addSubview(searchController.searchBar)
         }
     }
@@ -94,30 +209,34 @@ class DashBoardViewController: UIViewController {
 
 extension DashBoardViewController: UICollectionViewDataSource {
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == nearMeCollectionView {
             return interests.count
         } else {
             return locations.count
         }
-        
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == nearMeCollectionView  {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Storyboard.CellIdentifier, forIndexPath: indexPath) as! InterestCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath) as! InterestCollectionViewCell
             
-            cell.interest = self.interests[indexPath.item]
+//            let fruits: [Fruit] = dataSource.fruitsInGroup(indexPath.section)
+//            let fruit = fruits[indexPath.row]
+            
+//            print("", fruit)
+            
+            cell.interest = self.interests[(indexPath as NSIndexPath).item]
             
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Storyboard.LocationIdentifier, forIndexPath: indexPath) as! LocationsCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.LocationIdentifier, for: indexPath) as! LocationsCollectionViewCell
             
-            cell.location = self.locations[indexPath.item]
+            cell.location = self.locations[(indexPath as NSIndexPath).item]
             
             return cell
         }
@@ -128,11 +247,11 @@ extension DashBoardViewController: UICollectionViewDataSource {
 
 extension DashBoardViewController : UICollectionViewDelegate {
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        highlightCell(indexPath, flag: true)
     }
     
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
 //        highlightCell(indexPath, flag: false)
     }
 }
@@ -140,25 +259,25 @@ extension DashBoardViewController : UICollectionViewDelegate {
 extension DashBoardViewController: UICollectionViewDelegateFlowLayout {
     // MARK:- UICollectioViewDelegateFlowLayout methods
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
         // http://stackoverflow.com/questions/28872001/uicollectionview-cell-spacing-based-on-device-sceen-size
         
-        let length = (UIScreen.mainScreen().bounds.width-15)/2
-        return CGSizeMake(length,length);
+        let length = (UIScreen.main.bounds.width-15)/2
+        return CGSize(width: length,height: length);
     }
 }
 
 extension DashBoardViewController: UISearchBarDelegate {
     // MARK: - UISearchBar Delegate
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
 //        filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
 }
 
 extension DashBoardViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
 //        let searchBar = searchController.searchBar
 //        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
 //        filterContentForSearchText(searchController.searchBar.text!, scope: scope)
@@ -197,5 +316,72 @@ extension DashBoardViewController : SlideMenuControllerDelegate {
     
     func rightDidClose() {
         print("SlideMenuControllerDelegate: rightDidClose")
+    }
+}
+
+
+extension DashBoardViewController : CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else { return }
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegion(center: location.coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: \(error)")
+    }
+    
+}
+
+extension DashBoardViewController: HandleMapSearch {
+    
+    func dropPinZoomIn(_ placemark: MKPlacemark){
+        // cache the pin
+        selectedPin = placemark
+        // clear existing pins
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        
+        if let city = placemark.locality,
+            let state = placemark.administrativeArea {
+            annotation.subtitle = "\(city) \(state)"
+        }
+        
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+}
+
+extension DashBoardViewController : MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+        
+        guard !(annotation is MKUserLocation) else { return nil }
+        
+        let reuseId = "pin"
+        guard let pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView else { return nil }
+        
+        pinView.pinTintColor = UIColor.orange
+        pinView.canShowCallout = true
+        let smallSquare = CGSize(width: 30, height: 30)
+        let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
+        button.setBackgroundImage(UIImage(named: "car"), for: UIControlState())
+        button.addTarget(self, action: #selector(DashBoardViewController.getDirections), for: .touchUpInside)
+        pinView.leftCalloutAccessoryView = button
+        
+        return pinView
     }
 }

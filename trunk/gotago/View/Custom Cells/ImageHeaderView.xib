@@ -11,11 +11,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crj-Qs-Xeq">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-S4-hhE">
-                    <rect key="frame" x="8" y="72" width="80" height="80"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-S4-hhE">
+                    <rect key="frame" x="120" y="22" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="THq-40-VhC"/>
                         <constraint firstAttribute="width" constant="80" id="Vdp-yI-A0R"/>
@@ -24,19 +21,17 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="crj-Qs-Xeq" secondAttribute="bottom" id="2GQ-0j-7zw"/>
-                <constraint firstAttribute="trailing" secondItem="crj-Qs-Xeq" secondAttribute="trailing" id="CEW-Ct-L8O"/>
-                <constraint firstItem="crj-Qs-Xeq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Guc-J3-ibn"/>
-                <constraint firstAttribute="bottom" secondItem="KsU-S4-hhE" secondAttribute="bottom" constant="8" id="Kff-vI-5XQ"/>
-                <constraint firstItem="crj-Qs-Xeq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S4z-uS-qaB"/>
-                <constraint firstItem="KsU-S4-hhE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="cn0-Hd-iVZ"/>
+                <constraint firstItem="KsU-S4-hhE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="FQ6-E3-bqw"/>
+                <constraint firstItem="KsU-S4-hhE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VA3-Ag-Tc6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="backgroundImage" destination="crj-Qs-Xeq" id="s6z-e0-bbb"/>
                 <outlet property="profileImage" destination="KsU-S4-hhE" id="C8u-Fp-ZfO"/>
             </connections>
             <point key="canvasLocation" x="255" y="192"/>
         </view>
     </objects>
+    <resources>
+        <image name="default_user.png" width="200" height="200"/>
+    </resources>
 </document>
